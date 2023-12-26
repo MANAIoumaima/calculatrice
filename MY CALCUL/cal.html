@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="calc.js"></script>
+	<title>TEST</title>
+</head>
+
+<body>
+<center> 
+	<p>ZEDDINI CALCULATOR</p>
+	<br><br><br>
+<section class="box">
+	
+	<nav>
+	<button onclick="hidde('Hidden')" id="Hidden">try the calculator</button>
+	</nav>
+	<div hidden id="element">
+	<input type="text" id="x" placeholder="    valeur 1"><br><br>
+	<input type="text" id="y" placeholder="    valeur 2"><br><br>
+	<input type="text" id="rep" placeholder="   votre reponse"><br><br>
+
+			<select id="operateur">
+				<option value="+">+</option>
+				<option value="/">/</option>
+				<option value="*">*</option>
+				<option value="p">^</option>
+				<option value="r">√</option>
+
+
+			</select>
+																				<br><br>
+	<button onclick="calcul()" onclick="verification()">=</button><br><br>
+	<input type="text" id="result" placeholder="resultat"><br><br>
+	
+</div>
+</section>
+</center>
+</body>
+
+<style type="text/css">
+	
+	body{
+		background:#0097e6;
+	}
+
+	.box{
+		border: 4px #0097e6 solid;
+		border-radius: 15px;
+		width: 450px;
+		height: 450px;
+		padding-top: 40px;
+		background: white;
+		animation-name:xxx ;
+		animation-duration: 0.5s;
+		animation-iteration-count: infinite;
+	}
+	button{
+		
+		background: #0097e6;
+		border: 0px;
+		border-radius: 15px;
+		color: white;
+		height: 40px;
+		font-family: verdana;
+
+	}
+	button:hover{
+		background: #fbc531;
+		transition: 0.3s ease-in-out;
+	}
+	p{
+		font-family: tahoma;
+		font-size: 50px;
+		color: white;
+		margin: auto;
+	}
+	p:hover{
+		color: #fbc531;
+		transition: 0.4s;
+	}
+
+	@keyframes xxx{
+		0%{ border-color: #f6b93b;}
+		25%{ border-color: #fa983a;}
+		50%{ border-color: #e58e26;}
+		75%{ border-color: #FFC312;}
+		100%{ border-color: #F79F1F;}
+
+	}
+	select{
+		font-family: tahoma;
+		border: #0097e6 solid;
+		width: 42px;
+		border-radius: 10px;
+		color: white;
+		background: #0097e6;
+	}
+	select:focus{
+		background: #fbc531;
+		border: 0px #fbc531;
+		width: 42px;
+		transition: 0.25s ease-in-out;
+	}
+
+
+
+.box input[type = "text"],.box input[type = "text"],.box input[type ="text"]{
+  border:0;
+  color: #0097e6;
+  font-family: verdana;
+  text-align: center;
+  border: 2px solid #0984e3;
+  outline: none;
+  border-radius: 24px;
+  transition: 0.25s;
+}
+.box input[type = "text"]:focus,.box input[type = "text"]:focus,.box input[type ="text"]:focus
+{
+  
+  border-color: #f6b93b;
+  color: #0097e6;
+  font-family: verdana;
+  transition:0.25s;
+
+}
+
+</style>
+
+<br><br>
+<footer>
+	<center><p>CREATOR : @AZIZ_ZEDDINI</p></center>
+</footer>
+</html>
